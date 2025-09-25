@@ -8,13 +8,12 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
       color: #333;
     }
     header {
       background: #0d47a1;
       color: white;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
     }
     nav {
@@ -33,7 +32,7 @@
       text-decoration: underline;
     }
     section {
-      padding: 50px 20px;
+      padding: 60px 20px;
       max-width: 1200px;
       margin: auto;
     }
@@ -57,6 +56,10 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       width: 300px;
       text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
     }
     .card h3 {
       color: #0d47a1;
@@ -93,18 +96,22 @@
       padding: 15px;
       margin-top: 50px;
     }
+    .insta {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>🚘 Netty'Car</h1>
-    <p>Votre solution de lavage auto par abonnement</p>
+    <p>Votre solution de lavage auto par abonnement ou à l'unité</p>
   </header>
 
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#formules">Formules</a>
+    <a href="#prestations">Prestations</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -116,13 +123,19 @@
     </div>
   </section>
 
-  <section id="formules">
+  <section id="formules" style="background:#f4f9ff;">
     <h2 style="text-align:center; color:#0d47a1;">Nos formules d'abonnement</h2>
     <div class="formules">
       <div class="card">
         <h3>🚗 Particulier</h3>
-        <p>À partir de <strong>39,99€/mois</strong></p>
+        <p>À partir de <strong>19,99€/mois</strong></p>
         <p>Lavage extérieur et intérieur, une fois par semaine.</p>
+        <a href="#contact" class="btn">Je m'abonne</a>
+      </div>
+      <div class="card">
+        <h3>⭐ Premium Particulier</h3>
+        <p>À partir de <strong>39,99€/mois</strong></p>
+        <p>Lavage illimité + polissage offert une fois par mois.</p>
         <a href="#contact" class="btn">Je m'abonne</a>
       </div>
       <div class="card">
@@ -134,7 +147,23 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="prestations">
+    <h2 style="text-align:center; color:#0d47a1;">Prestations à l'unité</h2>
+    <div class="formules">
+      <div class="card">
+        <h3>🧽 Lavage sans abonnement</h3>
+        <p><strong>49,99€</strong></p>
+        <p>Lavage complet intérieur + extérieur, sans engagement.</p>
+      </div>
+      <div class="card">
+        <h3>🐶 Supplément poils d'animaux</h3>
+        <p><strong>+10€</strong></p>
+        <p>Nettoyage approfondi contre les poils d’animaux dans l’habitacle.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background:#f4f9ff;">
     <h2 style="text-align:center; color:#0d47a1;">Contactez-nous</h2>
     <form>
       <input type="text" placeholder="Nom" required>
@@ -142,6 +171,11 @@
       <textarea placeholder="Votre message" rows="5" required></textarea>
       <button type="submit" class="btn">Envoyer</button>
     </form>
+
+    <div class="insta" style="text-align:center;">
+      <p>📲 Suivez-nous sur Instagram</p>
+      <a href="https://www.instagram.com/netty_car" target="_blank" class="btn">Instagram @netty_car</a>
+    </div>
   </section>
 
   <footer>
