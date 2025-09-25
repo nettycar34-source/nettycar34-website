@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netty'Car - Abonnements lavage auto</title>
-  <meta name="description" content="Netty'Car propose des formules d'abonnement lavage auto premium et des prestations à l'unité. Prestations dès 49,99€. Supplément poils d'animaux 10€. Suivez-nous sur Instagram @netty_car.">
+  <meta name="description" content="Netty'Car propose des formules d'abonnement lavage auto premium et des prestations à l'unité. Prestations dès 59,99€. Supplément poils d'animaux 10€. Suivez-nous sur Instagram @netty_car.">
   <style>
     body {
       margin: 0;
